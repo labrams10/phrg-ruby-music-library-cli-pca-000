@@ -50,7 +50,7 @@ describe "Associations — Song and Genre:" do
       end
 
       it "adds the song to the genre's collection of songs (genre has many songs)" do
-        song.genre = genre
+        song.genre=(genre)
 
         expect(genre.songs).to include(song)
       end
